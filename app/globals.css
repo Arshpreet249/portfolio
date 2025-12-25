@@ -123,3 +123,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+.perspective {
+  perspective: 1200px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
