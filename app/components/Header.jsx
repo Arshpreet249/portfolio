@@ -35,13 +35,12 @@ const Header = () => {
           className="flex items-center"
         >
           <div
-            className="h-10 w-10 rounded-xl bg-gradient-to-r from-gray-500 to-gray-100 
-          flex items-center justify-center text-blue-600 font-bold text-xl mr-3"
+            className={`h-10 w-10 rounded-xl bg-gradient-to-r from-gray-500 to-gray-100 flex items-center justify-center text-blue-600 font-bold text-xl mr-3`}
           >
             A
           </div>
 
-          <span className="text-xl font-bold bg-gradient-to-r from-gray-200 to-gray-50 bg-clip-text text-transparent">
+          <span className={`text-xl font-bold bg-gradient-to-r from-gray-200 to-gray-50 bg-clip-text text-transparent`}>
             ArshPortfolio
           </span>
         </motion.div>
@@ -100,8 +99,8 @@ const Header = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 1.6, duration: 0.8, type: "spring", stiffness: 100, damping: 15 }}
-            className="ml-4 px-4 py-2 rounded-xl bg-gradient-to-r from-gray-400 to-gray-100 
-            text-blue-700 font-bold hover:from-blue-700 hover:to-blue-700 hover:text-white transition-all duration-500"
+            className={`ml-4 px-4 py-2 rounded-xl bg-gradient-to-r from-gray-400 to-gray-100 
+            text-blue-700 font-bold hover:from-blue-700 hover:to-blue-700 hover:text-white transition-all duration-500`}
           >
             Hire me
           </motion.button>
