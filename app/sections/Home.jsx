@@ -27,7 +27,7 @@ export default function HeroSection() {
     return () => window.removeEventListener("resize", updateScale);
   }, []);
   return (
-    <div
+    <section id="home"
       className=" relative w-full min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-10 lg:px-20 py-10">
 
       <Image
@@ -86,6 +86,6 @@ export default function HeroSection() {
        
       </div>
    
-    </div>
+    </section>
   );
 }

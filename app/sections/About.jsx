@@ -4,24 +4,28 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-const Gif = "/video/space.gif"; 
+import Tilt from "react-parallax-tilt";
+
+const Gif = "/video/space.gif";
 const Profile = "/images/profile.jpg";
 const Chatbox = '/video/chatbox.gif'
 
 export default function AboutPage() {
   return (
-    <section className="w-full min-h-screen pt-24 px-6 bg-slate-900 overflow-hidden">
+    <section id="about" 
+    className="w-full min-h-screen pt-24 px-6 bg-slate-900 overflow-hidden">
       {/* TITLE */}
-     <div className="flex items-center justify-center gap-6 mb-12 w-full">
-          <span className="h-[2px] w-28 bg-gradient-to-r from-transparent to-cyan-400 shadow-[0_0_12px_#22d3ee]" />
-          
-          <h2 className="text-5xl text-white font-extrabold md:text-4xl font-semibold tracking-wide
-                         drop-shadow-[0_0_10px_rgba(34,211,238,0.6)]">
-            About Me
-          </h2>
-          
-          <span className="h-[2px] w-28 bg-gradient-to-l from-transparent to-cyan-400 shadow-[0_0_12px_#22d3ee]" />
-        </div>
+      <div className="flex items-center justify-center gap-6 mb-12 w-full">
+        <span className="h-[2px] w-28 bg-gradient-to-r from-transparent to-cyan-400 shadow-[0_0_12px_#22d3ee]" />
+
+        <h2 className="text-5xl font-extrabold tracking-wide text-white
+                 drop-shadow-[0_0_10px_rgba(34,211,238,0.6)]">
+          About Me
+        </h2>
+
+        <span className="h-[2px] w-28 bg-gradient-to-l from-transparent to-cyan-400 shadow-[0_0_12px_#22d3ee]" />
+      </div>
+
 
       <div className="relative max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
@@ -95,7 +99,7 @@ export default function AboutPage() {
         </div>
       </div>
 
-      
+
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}

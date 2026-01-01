@@ -10,7 +10,8 @@ const Skillbg = "/images/skillbg.jpg";
 
 const Skill = () => {
   return (
-    <div className="relative w-full min-h-screen overflow-hidden">
+    <section id="skills"
+     className="relative w-full min-h-screen overflow-hidden">
 
       {/* Background */}
       <img
@@ -21,7 +22,7 @@ const Skill = () => {
       <div className="absolute inset-0 bg-black/30" />
 
       {/* Content */}
-      <section className="relative z-10 w-full min-h-screen py-20 px-6 flex flex-col items-center text-white">
+      <div className="relative z-10 w-full min-h-screen py-20 px-6 flex flex-col items-center text-white">
 
         {/* Heading */}
         <div className="flex items-center justify-center gap-6 mb-10 w-full">
@@ -45,14 +46,8 @@ const Skill = () => {
           {SkillLogo.map((skill, index) => (
             <div key={index} className="group perspective">
               <div
-                className="relative h-44 rounded-2xl
-                           bg-white/5 backdrop-blur-lg
-                           border border-white/10
-                           shadow-[0_25px_50px_rgba(0,0,0,0.4)]
-                           transform-style-preserve-3d
-                           transition-all duration-500
-                           group-hover:rotate-x-12 group-hover:-rotate-y-12
-                           group-hover:scale-105"
+                className={`relative h-44 rounded-2xl bg-white/5 backdrop-blur-lg border border-white/10 shadow-[0_25px_50px_rgba(0,0,0,0.4)]
+                           transform-style-preserve-3d transition-all duration-500 group-hover:rotate-x-12 group-hover:-rotate-y-12 group-hover:scale-105`}
               >
                 {/* Glow */}
                 <div
@@ -76,8 +71,8 @@ const Skill = () => {
           ))}
         </div>
 
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 
