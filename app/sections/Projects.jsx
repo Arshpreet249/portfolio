@@ -29,7 +29,8 @@ const projects = [
 const Projects = () => {
   return (
     <section  id='projects'
-    className="w-full min-h-screen pt-24 px-6 bg-slate-900 overflow-hidden">
+    className="w-full min-h-screen pt-24 px-6 bg-slate-900 overflow-hidden py-10">
+      
       
       {/* TITLE */}
       <div className="flex items-center justify-center gap-6 mb-24">
