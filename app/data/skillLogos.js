@@ -13,5 +13,6 @@ export const SkillLogo = [
   { name: "Bootstrap", logo: "/logos/Bootstrap.png", color: "from-purple-400 to-indigo-500" },
   { name: "Figma", logo: "/logos/Figma.png", color: "from-pink-400 to-rose-500" },
   { name: "Express", logo: "/logos/Express.png", color: "from-gray-400 to-gray-600" },
-  // { name: "Postman", logo: "/logos/Postman.png", color: "from-orange-400 to-amber-500" },
+  // {name: "Typescript" ,logo: "/logos/TypeScript.png", color: "from-blue-400 to-white"}
+  { name: "TypeScript", logo: "/logos/TypeScript.png", color: "from-blue-500 to-blue-700" }
 ];

@@ -1,6 +1,3 @@
-
-
-
 "use client";
 
 import React from "react";
@@ -44,25 +41,25 @@ const Skill = () => {
         {/* 3D Skill Cards with Logos */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl w-full">
           {SkillLogo.map((skill, index) => (
-            <div key={index} className="group perspective">
+            <div key={index} className="group perspective animate-float">
               <div
                 className={`relative h-44 rounded-2xl bg-white/5 backdrop-blur-lg border border-white/10 shadow-[0_25px_50px_rgba(0,0,0,0.4)]
                            transform-style-preserve-3d transition-all duration-500 group-hover:rotate-x-12 group-hover:-rotate-y-12 group-hover:scale-105`}
               >
                 {/* Glow */}
                 <div
-                  className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition
-                              bg-gradient-to-br ${skill.color} blur-xl`}
+                  className={`absolute inset-[1px] rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500
+                              bg-gradient-to-br ${skill.color} blur-lg`}
                 />
 
                 {/* Card Content */}
-                <div className="relative z-10 h-full flex flex-col items-center justify-center gap-4">
+                <div className="relative z-10 h-full rounded-2xl bg-black/40 flex flex-col items-center justify-center gap-4">
                   <img
                     src={skill.logo}
                     alt={skill.name}
-                    className="w-14 h-14 object-contain"
+                    className="w-14 h-14 object-contain transition-transform duration-500 group-hover:scale-110"
                   />
-                  <span className="text-lg font-semibold">
+                  <span className="text-lg font-semibold tracking-wide">
                     {skill.name}
                   </span>
                 </div>

@@ -49,9 +49,10 @@ export default function HeroSection() {
         {/* <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-gray-100">
           Hi, I'm <span className="text-blue-500">Arshpreet Kaur</span>
         </h1> */}
+        <p className="text-white text-4xl md:text-3xl sm:text-2xl font-semibold mt-4">Hi I'm</p>
   <div className="relative w-full max-w-xl">
   <TextPressure
-   text={`Hi, I'm\n\nArshpreet Kaur`}
+   text={`Arshpreet Kaur`}
     flex
     width
     weight
@@ -89,8 +90,8 @@ export default function HeroSection() {
           <Suspense fallback={null}>
             {/* Scale changes by screen size */}
             <Spaceman 
-                scale={scale}
-              position={[0, -1.4, 0]}
+                scale={0.23}
+              position={[0, -1.5, 0]}
               
             />
 
